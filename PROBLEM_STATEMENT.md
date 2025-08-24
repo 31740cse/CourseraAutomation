@@ -1,73 +1,58 @@
-# 🚀 Hackathon Idea: Automated Course Identification & Validation
+# 📌 Problem Statement: Coursera Automation
 
-## 📌 Problem Statement: Identify Courses
+## 🎯 Objective
+Automate the process of identifying beginner-friendly Web Development courses, exploring Language Learning categories, and validating forms on Coursera (or a similar platform).
 
-The goal is to **automate the process of identifying beginner-friendly Web Development courses** and explore other features on an e-learning platform (e.g., [Coursera.org](https://www.coursera.org)).
+---
 
-### 🎯 Tasks
+## 🔍 Detailed Description
 
-1. **Search & Display Courses**
-   - Search for **Web Development** courses.  
-   - Apply filters:
-     - Beginner level  
-     - English language  
-   - Extract and display details of the **first two courses**:
-     - Course Name  
-     - Total Learning Hours  
-     - Rating  
+### 1. Identify Courses
+- Search for **Web Development courses**.  
+- Apply filters:
+  - **Beginner Level**  
+  - **English Language**  
+- Extract and display details of the **first two courses**:
+  - Course Name  
+  - Total Learning Hours  
+  - Rating  
 
-2. **Language Learning Section**
-   - Navigate to the **Language Learning** category.  
-   - Extract:
-     - All available languages  
-     - Different levels (Beginner, Intermediate, Advanced, etc.)  
-     - **Total count** of courses for each combination.  
+---
 
-3. **Form Validation – "For Enterprise"**
-   - From **Home Page**, go to:  
-     `For Enterprise → Campus → Products`  
-   - Scroll to the **"Ready to Transform"** form.  
-   - Fill the form with at least **one invalid input** (e.g., incorrect email format).  
-   - **Capture and display the error/warning message.**  
+### 2. Explore Language Learning
+- Navigate to **Language Learning**.  
+- Extract:
+  - All available languages  
+  - Different levels (Beginner, Intermediate, Advanced, etc.)  
+  - **Total course count** for each combination  
+
+---
+
+### 3. Form Validation – For Enterprise
+- From **Home Page**, go to:  
+  `For Enterprise → Campus → Products`  
+- Scroll to the **"Ready to Transform"** form.  
+- Fill the form with at least **one invalid input** (e.g., incorrect email format).  
+- **Capture and display the error/warning message.**  
 
 ---
 
 ## 🔑 Key Automation Scope
 
-This problem covers essential Selenium/Web Automation concepts:
-
-- ✅ Handling **multiple browser windows/tabs**  
-- ✅ Using **search options** and applying filters  
-- ✅ Extracting **multiple dropdown list items** & storing them in collections  
-- ✅ Navigating back to **Home Page**  
-- ✅ Filling forms (with different objects: text fields, dropdowns, checkboxes)  
-- ✅ Capturing **warning/error messages**  
-- ✅ Scrolling down a web page  
+- Handling **multiple browser windows**  
+- Using **search options** and applying filters  
+- Extracting **multiple dropdown items** into collections  
+- Navigating back to **Home Page**  
+- Filling forms (text fields, dropdowns, checkboxes)  
+- Capturing **warning/error messages**  
+- Scrolling web pages  
 
 ---
 
-## 🛠️ Suggested Tools & Tech Stack
+## 🛠️ Suggested Tools
 
-- **Language**: Java / Python / C# (any)  
-- **Framework**: Selenium WebDriver / Playwright  
-- **Test Runner**: JUnit / TestNG / PyTest  
-- **Reporting**: Extent Reports / Allure  
-
----
-
-## 📂 Expected Output
-
-1. **First 2 Web Development Courses (Beginner, English)**  
-   - Course Name  
-   - Total Hours  
-   - Rating  
-
-2. **Language Learning Section**  
-   - List of languages  
-   - Levels per language  
-   - Total course count  
-
-3. **Form Validation**  
-   - Captured error message for invalid input  
-
----
+- **Language:** Java  
+- **Automation Framework:** Selenium WebDriver  
+- **Testing Framework:** TestNG  
+- **Build Tool:** Maven  
+- **IDE:** Eclipse / VS Code  
