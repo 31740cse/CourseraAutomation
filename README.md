@@ -43,3 +43,9 @@ The automation scripts perform course search, data extraction, and form validati
    ```bash
    git clone https://github.com/your-username/CourseraAutomation.git
    cd CourseraAutomation
+
+2. Run tests with Maven
+   ```bash
+   mvn test
+
+3. Or run tests directly in VS Code / Eclipse as per -[Run Procedure]
