@@ -2,6 +2,7 @@ package config;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -13,11 +14,27 @@ import org.openqa.selenium.WebElement;
 
 public class ConfigReader {
 	private Properties properties;
+
+	/*
 	public ConfigReader() throws IOException {
 		properties = new Properties();
 		FileInputStream fs = new FileInputStream("src\\test\\resources\\config.properties");
 		properties.load(fs);
 	}
+	*/
+
+	//Generic way to load properties file from resources folder
+	//This way it will work in any system without changing the path
+	public ConfigReader() throws IOException {
+        properties = new Properties();
+
+        // Use ClassLoader to load config.properties from resources folder
+        InputStream input = getClass().getClassLoader().getResourceAsStream("config.properties");
+        if (input == null) {
+            throw new IOException("Unable to find config.properties in resources folder");
+        }
+        properties.load(input);
+    }
 	
 	public String getBrowser() {
 		return properties.getProperty("browser");
