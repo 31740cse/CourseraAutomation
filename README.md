@@ -41,7 +41,7 @@ The automation scripts perform course search, data extraction, and form validati
 
 1. Clone the repository  
    ```bash
-   git clone https://github.com/your-username/CourseraAutomation.git
+   git clone https://github.com/31740cse/CourseraAutomation.git
    cd CourseraAutomation
 
 2. Run tests with Maven
